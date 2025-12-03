@@ -1,53 +1,105 @@
-# EXP-4
-EXP. NO. 4. 		HALFWAVE  AND FULL WAVE  RECTIFIERS
+# EXP-4  
+## HALF WAVE AND FULL WAVE RECTIFIERS
 
-AIM: To study the characteristics of half wave, full wave and bridge rectifier with and without filter and calculate the ripple factor, rectification efficiency and % regulation.
+### AIM  
+To study the characteristics of half wave, full wave and bridge rectifiers with and without filter, and calculate the ripple factor, rectification efficiency and percentage regulation.
 
-COMPONENTS  AND  EQUIPMENT  REQUIRED:  Diodes,  Resistor,  Transformer,  Voltmeter, Ammeter, Breadboard and CRO.
+### COMPONENTS AND EQUIPMENT REQUIRED  
+Diodes, Resistor, Transformer, Voltmeter, Ammeter, Breadboard and CRO.
 
-THEORY: Rectifier changes ac to dc and it is an essential part of power supply. The unique property of a diode, permitting the current to flow in one direction, is utilised in rectifiers.
+---
 
-Half Wave Rectifier
+## THEORY
 
+A rectifier converts AC to DC and is a key part of any power supply. A diode allows current to flow only in one direction, which makes rectification possible.
 
-Mains power supply is applied at the primary of the step-down transformer. All the positive half cycles of the stepped down ac supply pass through the diode and all the negative half cycles get eliminated. Peak value of the output voltage is less than the peak value of the input voltage by 0.6V because of the voltage drop across the diode.
-For a half wave rectifier, Vrms = Vm/2 and Vdc = Vm/π: where Vrms = rms value of input, Vdc = Average value of input and Vm = peak value of output.
+---
 
+### **Half Wave Rectifier**
 
-Full Wave Rectifier
-During the positive half cycle of the transformer secondary voltage, diode     is forward biased and      is reverse biased. So a current flows through the diode     , load resistor      and upper half of the transformer  winding.  During  the  negative  half  cycle,  diode       becomes  forward  biased  and becomes reverse biased. The current then flows through the diode     , load resistor      and lower half of the transformer winding. Current flows through the load resistor in the same direction during both the half cycles. Peak value of the output voltage is less than the peak value of the input voltage by 0.6V
-because of the voltage drop across the diode.
-During the positive half cycle of the secondary voltage, diodes      and      are forward biased and diodes and      are reverse biased. Therefore, current flows through the secondary winding, diode     , load resistor
-and diode     . During the negative half cycle,      and      are forward biased and diodes      and      are reverse biased. Therefore, current flows through the secondary winding, diode     . Load resistor       During both the half cycles, the current flows through the load resistor in the same direction. Peak value of the output voltage is less than the peak value of the input voltage by 1.2V due to the voltage drop across two diodes. The ripple factor of the bridge rectifier is the same as that of full wave rectifier.
-All rectifier outputs contain considerable amount of ripple in addition to the DC component. In order to avoid AC components, a filter is connected at the output of the rectifier.
+Mains AC is applied to the primary of a step-down transformer.  
+Only the positive half cycles of the AC appear across the load because the diode conducts in one direction.  
+The peak output voltage is lower than the input by about 0.6 V due to diode drop.
 
-Capacitor input filter, choke input filter, RC, CRC, LC, and CLC filters are the usually used filters. Capacitor input filter is the simplest and cheapest. A high value capacitor C is connected in shunt with the load resistor     . Capacitor charges to peak voltage      when the half cycle appears at the output. After the peak value is passed, the capacitor discharges through the load resistor slowly since the diode is reverse biased by the capacitor voltage. Before the capacitor voltage drops substantially, next output cycle arrives and the capacitor recharges to peak.
+Formulas:  
+- \( V_{rms} = \frac{V_m}{2} \)  
+- \( V_{dc} = \frac{V_m}{\pi} \)
 
-Rectifier Efficiency
+Where:  
+\( V_{rms} \) is the RMS value,  
+\( V_{dc} \) is the average output,  
+\( V_m \) is the peak output voltage.
 
-Rectifier efficiency is defined as the ratio of DC output power to the input power from the AC supply. Even with ideal rectifiers with no losses, the efficiency is less than 100% because some of the output power is AC power rather than DC which manifests as ripple superimposed on the DC waveform.
-PROCEDURE:
+---
 
-1.   Wire up the half wave rectifier circuit without capacitor after testing all the components.
+### **Full Wave Rectifier**
 
-2.   Switch on the main supply. Observe the transformer secondary voltage waveform and output voltage waveform across the load resistor, simultaneously on the CRO screen. Note down       and calculate
-3.   Connect the capacitor filter and observe the waveforms. Note down and calculate ripple factor, rectifier efficiency and %regulation using the expressions. Repeat for different capacitor values.
-4.   Repeat the above steps for full wave and bridge rectifiers.
+In a full wave rectifier, each half cycle of AC produces a unidirectional current through the load.  
+One diode conducts during the positive half cycle and the other during the negative half cycle.  
+Again, the peak output is lower than the input by about 0.6 V due to diode drop.
 
-CIRCUIT DIAGRAMS
+---
 
-Half wave rectifier with filter:
+### **Bridge Rectifier**
 
-Bridge rectifier with filter:
+In a bridge rectifier, four diodes are used.  
+Two diodes conduct during each half cycle, ensuring current through the load always flows in the same direction.  
+The peak output voltage is lower than the input by about 1.2 V due to drops across two diodes.
 
-TABULAR COLUMN
-Rectifier without filter
-TABULAR COLUMN
-Rectifier with filter
+The ripple factor of a bridge rectifier is the same as a full wave rectifier.
 
-WAVEFORM:
+---
 
+### **Filters**
 
-RESULT:
+Rectifier output still contains AC components called ripples. Filters reduce these ripples.
 
-Input and Output waveforms of a half and full bridge-wave with /without filter are observed and plotted.
+Common types: Capacitor input, choke input, RC, CRC, LC, CLC.  
+A capacitor input filter is the simplest.  
+
+The capacitor charges to the peak voltage of each cycle and discharges slowly through the load, reducing ripple.
+
+---
+
+### **Rectifier Efficiency**
+
+Rectifier efficiency is the ratio:
+
+\[
+\text{Efficiency} = \frac{\text{DC output power}}{\text{AC input power}}
+\]
+
+Even ideal rectifiers are less than 100% efficient due to ripple.
+
+---
+
+## PROCEDURE
+
+1. Build the half wave rectifier circuit **without** a capacitor after testing all components.  
+2. Switch on the supply. Observe and record the transformer secondary waveform and the rectifier output waveform on the CRO.  
+3. Add the capacitor filter, observe the filtered waveforms, and calculate ripple factor, rectification efficiency and regulation. Repeat for multiple capacitor values.  
+4. Repeat the same procedure for full wave and bridge rectifiers.
+
+---
+
+## CIRCUIT DIAGRAMS
+
+### Half Wave Rectifier with Filter
+![Half Wave Filter](https://github.com/user-attachments/assets/a4c18095-c644-4904-859d-74366ffdd1ba)
+
+### Bridge Rectifier with Filter
+![Bridge Filter](https://github.com/user-attachments/assets/3344ec4f-1d93-43fd-b72e-f7d36137e3dc)
+
+---
+
+### HALF WAVE RECTIFIER WAVEFORM
+![HWR](https://github.com/user-attachments/assets/1a6892a2-a183-44b9-8b9e-be02018a8657)
+
+### FULL WAVE RECTIFIER WAVEFORM
+![FWR](https://github.com/user-attachments/assets/54ad14fa-6fa5-40fe-9a61-e43508017e4d)
+
+---
+
+## RESULT  
+Input and output waveforms of half wave, full wave and bridge rectifiers with and without filters are observed and plotted.
+
